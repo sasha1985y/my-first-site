@@ -27,7 +27,7 @@ body {
   margin-right: 56px;
   padding-bottom: 10px;
   padding-top: 10px;
-  color: #60e7e7;
+  color: #8da2ed;
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: left;
@@ -35,7 +35,7 @@ body {
 
 .page-header a:focus,
 .page-header a:hover {
-  border-bottom: 1px solid #60e7e7;
+  border-bottom: 1px solid #8da2ed;
   filter: hue-rotate(50deg);
 }
 
@@ -98,7 +98,7 @@ body {
   font-size: 72px;
   line-height: 104px;
   font-weight: 400;
-  color: #60e7e7;
+  color: #8da2ed;
 }
 
 .intro .container {
@@ -272,7 +272,7 @@ body {
   margin: 4px;
   height: 24px;
   min-height: unset;
-  background-color: #60e7e7;
+  background-color: #8da2ed;
   background-image: url("img/progress-pattern.svg");
 }
 
@@ -285,8 +285,8 @@ body {
   letter-spacing: 0.5px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #60e7e7;
-  border: 1px solid #60e7e7;
+  color: #8da2ed;
+  border: 1px solid #8da2ed;
 }
 
 .button::before {
@@ -320,7 +320,7 @@ body {
 
 .page-footer {
   padding: 40px 0;
-  background-color: #60e7e7;
+  background-color: #8da2ed;
 }
 
 .page-footer a {
