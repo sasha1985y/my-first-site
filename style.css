@@ -1,4 +1,4 @@
-body {
+/*body {
   position: relative;
   margin: 0;
   min-width: 1408px;
@@ -6,10 +6,14 @@ body {
   font-size: 16px;
   line-height: 32px;
   color: #222222;
-  background-image: url("img/hero-bg.jpg");
+  background-image: url("img/hero-bg-2.png");
   background-repeat: no-repeat;
   background-position-y: top;
   background-position-x: calc(50vw + 16px);
+}*/
+
+#body-style {
+  background-image: url("img/hero-bg-2.png");
 }
 
 .container {
@@ -27,7 +31,7 @@ body {
   margin-right: 56px;
   padding-bottom: 10px;
   padding-top: 10px;
-  color: #60e7e7;
+  color: #725ee4;
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: left;
@@ -35,7 +39,7 @@ body {
 
 .page-header a:focus,
 .page-header a:hover {
-  border-bottom: 1px solid #60e7e7;
+  border-bottom: 1px solid #725ee4;
   filter: hue-rotate(50deg);
 }
 
@@ -98,7 +102,7 @@ body {
   font-size: 72px;
   line-height: 104px;
   font-weight: 400;
-  color: #60e7e7;
+  color: #725ee4;
 }
 
 .intro .container {
@@ -272,7 +276,7 @@ body {
   margin: 4px;
   height: 24px;
   min-height: unset;
-  background-color: #60e7e7;
+  background-color: #725ee4;
   background-image: url("img/progress-pattern.svg");
 }
 
@@ -285,8 +289,8 @@ body {
   letter-spacing: 0.5px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #60e7e7;
-  border: 1px solid #60e7e7;
+  color: #725ee4;
+  border: 1px solid #725ee4;
 }
 
 .button::before {
@@ -320,7 +324,7 @@ body {
 
 .page-footer {
   padding: 40px 0;
-  background-color: #60e7e7;
+  background-color: #725ee4;
 }
 
 .page-footer a {
@@ -352,4 +356,19 @@ body {
 .footer-phone {
   padding-left: 25px;
   background-image: url("img/icon-phone-footer.svg");
+}
+
+.hidden {
+  display: none;
+}
+
+/* Цветовые темы */
+.page-longread.light-theme {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.page-longread.dark-theme {
+  background-color: #1C1B1C;
+  color: #f2f2f2;
 }
