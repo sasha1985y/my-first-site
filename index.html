@@ -4,14 +4,32 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
-    <title>Сайт-портфолио</title>
+    <title>Сайт-портфолио(в разработке)</title>
+    <style id="body-style">
+      body {
+        position: relative;
+        margin: 0;
+        min-width: 1408px;
+        font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+        font-size: 16px;
+        line-height: 32px;
+        color: #222222;
+        background-image: url("img/hero-bg.jpg");
+        background-repeat: no-repeat;
+        background-position-y: top;
+        background-position-x: calc(50vw + 16px);
+      }
+    </style>
   </head>
 
-  <body>
+  <body class="page page-longread light-theme">
     <header class="page-header">
       <div class="container">
         <a class="header-email" href="mailto:kuyancev1985@mail.ru">kuyancev1985@mail.ru</a>
         <a class="header-phone" href="tel:+79047544522">+7 (904) 754 45 22</a>
+        <button class="theme-button" type="button">Изменить тему</button>
+        <button class="theme-button-off" type="button">выкл</button>
+        <button class="theme-button-on hidden" type="button">вкл</button>
       </div>
     </header>
 
@@ -47,5 +65,6 @@
         </a>
       </div>
     </footer>
+    <script src="js/main.js" type="module"></script>
   </body>
 </html>
