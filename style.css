@@ -1,17 +1,3 @@
-/*body {
-  position: relative;
-  margin: 0;
-  min-width: 1408px;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 32px;
-  color: #222222;
-  background-image: url("img/hero-bg-2.png");
-  background-repeat: no-repeat;
-  background-position-y: top;
-  background-position-x: calc(50vw + 16px);
-}*/
-
 #body-style {
   background-image: url("img/hero-bg-2.png");
 }
@@ -90,12 +76,12 @@
   line-height: 48px;
 }
 
-.intro {
+/*.intro {
   margin: 0 0 160px;
   padding-top: 240px;
   padding-bottom: 80px;
   background-color: #fafbfd;
-}
+}*/
 
 .subheading {
   margin: 0 0 56px;
@@ -362,13 +348,41 @@
   display: none;
 }
 
-/* Цветовые темы */
-.page-longread.light-theme {
-  background-color: #ffffff;
-  color: #333333;
+.change-able-text {
+  text-decoration: none;
 }
 
-.page-longread.dark-theme {
-  background-color: #1C1B1C;
-  color: #f2f2f2;
+.night-color-1 {
+  text-decoration: none;
+  color: darkgoldenrod;
+}
+
+.night-color-2 {
+  text-decoration: none;
+  color: darkcyan;
+}
+
+.night-color-3 {
+  text-decoration: none;
+  color: darkkhaki;
+}
+
+.night-color-4 {
+  text-decoration: none;
+  color: darkmagenta;
+}
+
+.night-color-5 {
+  text-decoration: none;
+  color: darkorange;
+}
+
+.night-color-6 {
+  text-decoration: none;
+  color: darkred;
+}
+
+.night-color-7 {
+  text-decoration: none;
+  color: darksalmon;
 }
