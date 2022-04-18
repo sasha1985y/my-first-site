@@ -1,0 +1,68 @@
+#time {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+#time .circle {
+    margin: -100px -100px 0 0px;
+    padding: 0 0 0 0;
+}
+
+#time .ap {
+    margin: -50px 140px 0 -40px;
+    padding: 0 0 0 0;
+}
+
+#time svg {
+    margin: -100px -100px 0px 0px;
+    padding: 0 0 0 0;
+}
+
+#time div {
+    margin: 5px -100px 0px 106px;
+    padding: 0 0 0 0;  
+}
+
+#time .circle svg {
+    transform: rotate(270deg);
+}
+
+#time div span {
+    position: absolute;
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
+#time .circle svg circle {
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke: #575050;
+    stroke-width: 2;
+    transform: translate(1px,1px);
+}
+
+#time .circle svg circle:nth-child(2)
+{
+    stroke: var(--clr);
+    stroke-dasharray: 250;
+}
+
+#hours {
+    color: aqua;
+}
+
+#minutes {
+    color: chartreuse;
+}
+
+#seconds {
+    color: gold;
+}
+
+#ampm {
+    color: rgb(167, 88, 219);
+}
