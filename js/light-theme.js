@@ -3,15 +3,21 @@ import {getRandomNightLight} from './utilites.js';
 let off = document.querySelector('.theme-button-off');
 let on = document.querySelector('.theme-button-on');
 
-const bodyImg = document.getElementById('body-style');
-const setIntro = document.getElementById('set-intro');
+const body = document.querySelector('body');
+const sectionPageHeader = body.querySelector('.page-header');
+const sectionHeroImage = body.querySelector('.hero-image');
+const sectionIntro = body.querySelector('.intro');
 const changeAbleStrings = document.querySelectorAll('.change-able-text');
 const contrastStrings = document.querySelectorAll('.contrast');
-const circles = document.querySelectorAll('.circle');  
 
 off.addEventListener ('click', () => {
-  bodyImg.textContent = 'body {position: relative; margin: 0; min-width: 1408px; font-family: "Montserrat", "Helvetica", "Arial", sans-serif; font-size: 16px; line-height: 32px; color: #222222; background-image: url("files/hero-bg-2.png"); background-repeat: no-repeat; background-position-y: top; background-position-x: calc(50vw + 16px); background-color: #1C1B1C;};';
-  setIntro.textContent = '.intro {margin: 0 0 160px; padding-top: 240px; padding-bottom: 80px; background-color: #1C1B1C;}';
+  sectionPageHeader.style.backgroundColor='#1C1B1C';
+  sectionHeroImage.style.backgroundColor='#1C1B1C';
+  sectionHeroImage.style.backgroundImage = 'url(files/hero-bg-2.png)';
+  sectionHeroImage.style.backgroundRepeat='no-repeat';
+  sectionHeroImage.style.backgroundPositionY='top';
+  sectionHeroImage.style.backgroundPositionX='calc(50vw + 16px)';
+  sectionIntro.style.backgroundColor='#1C1B1C';
   for (let i = 0; i < changeAbleStrings.length; i++) {
     const changeAbleString = changeAbleStrings[i];
     changeAbleString.classList.remove('change-able-text');
@@ -32,8 +38,13 @@ off.addEventListener ('click', () => {
 });
 
 on.addEventListener ('click', () => {
-  bodyImg.textContent = 'body {position: relative; margin: 0; min-width: 1408px; font-family: "Montserrat", "Helvetica", "Arial", sans-serif; font-size: 16px; line-height: 32px; color: #222222; background-image: url("img/hero-bg.jpg"); background-repeat: no-repeat; background-position-y: top; background-position-x: calc(50vw + 16px);};';
-  setIntro.textContent = '.intro {margin: 0 0 160px; padding-top: 240px; padding-bottom: 80px; background-color: #fafbfd;}';
+  sectionPageHeader.style.backgroundColor='#fafbfd';
+  sectionHeroImage.style.backgroundColor='#fafbfd';
+  sectionHeroImage.style.backgroundImage = 'url(img/hero-bg.jpg)';
+  sectionHeroImage.style.backgroundRepeat='no-repeat';
+  sectionHeroImage.style.backgroundPositionY='top';
+  sectionHeroImage.style.backgroundPositionX='calc(50vw + 16px)';
+  sectionIntro.style.backgroundColor = '#fafbfd';
   for (let i = 0; i < changeAbleStrings.length; i++) {
     const changeAbleString = changeAbleStrings[i];
     const className = changeAbleString.getAttribute('class');
