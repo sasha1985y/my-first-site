@@ -4,6 +4,7 @@ let off = document.querySelector('.theme-button-off');
 let on = document.querySelector('.theme-button-on');
 
 const body = document.querySelector('body');
+const worldMap = body.querySelector('.map');
 const sectionPageHeader = body.querySelector('.page-header');
 const sectionHeroImage = body.querySelector('.hero-image');
 const sectionIntro = body.querySelector('.intro');
@@ -18,6 +19,7 @@ off.addEventListener ('click', () => {
   sectionHeroImage.style.backgroundPositionY='top';
   sectionHeroImage.style.backgroundPositionX='calc(50vw + 16px)';
   sectionIntro.style.backgroundColor='#1C1B1C';
+  worldMap.style.backgroundColor='#1C1B1C';
   for (let i = 0; i < changeAbleStrings.length; i++) {
     const changeAbleString = changeAbleStrings[i];
     changeAbleString.classList.remove('change-able-text');
@@ -45,6 +47,7 @@ on.addEventListener ('click', () => {
   sectionHeroImage.style.backgroundPositionY='top';
   sectionHeroImage.style.backgroundPositionX='calc(50vw + 16px)';
   sectionIntro.style.backgroundColor = '#fafbfd';
+  worldMap.style.backgroundColor = '#fafbfd';
   for (let i = 0; i < changeAbleStrings.length; i++) {
     const changeAbleString = changeAbleStrings[i];
     const className = changeAbleString.getAttribute('class');
