@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/colors.css">
     <link rel="stylesheet" href="css/red.css">
     <link rel="stylesheet" href="css/clock.css">
+    <link rel="stylesheet" href="css/leaflet.css">
+    <!--link rel="stylesheet" href="css/nouislider.css"-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
     <title>Сайт-портфолио(в разработке)</title>
   </head>
@@ -69,8 +71,14 @@
             <h3 class="change-able-text">Чем могу быть полезе<i class="contrast">N</i></h3>
             <p class="change-able-text">После обучения я буду разрабатывать сложные клие<i class="contrast">нтские приложения.</i></p>
           </div>
-          <div class="map__canvas" id="map-canvas"></div>
-          <img class="red-kitty" src="files/котенок-96.png" alt="рыжик">
+          <!--img class="red-kitty" src="files/котенок-96.png" alt="рыжик"-->
+      </section>
+      <section class="map">
+        <fieldset class="form-address__field container">
+          <label class="form-address__label" for="address">Адрес (координаты)</label>
+          <input id="address" name="address" type="text" minlength="15" maxlength="18" placeholder="0, 0" readonly>
+        </fieldset>
+        <div class="map__canvas container" id="map-canvas"></div>
       </section>
     </main>
 
@@ -81,6 +89,8 @@
         </a>
       </div>
     </footer>
+    <script src="js/leaflet.js"></script>
+    <!--script src="js/nouislider.js"></script-->
     <script src="js/main.js" type="module"></script>
   </body>
 </html>
