@@ -1,7 +1,11 @@
-const INITIAL_LAT = 48.75656;
-const INITIAL_LNG = 44.48939;
+import {places} from './map-data.js';
+import {createCustomPopup} from './map-popup.js';
+
+const INITIAL_LAT = 48.75661;
+const INITIAL_LNG = 44.48914;
 const initialCoordinates = {lat: INITIAL_LAT, lng: INITIAL_LNG};
 const addresses = document.querySelector('#address');
+
 const Map = {
   TILE: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
   COPYRIGHT: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>',
@@ -51,3 +55,30 @@ const mainPinMove = () => {
   })
 };
 mainPinMove();
+
+const addPinIcon = L.icon({
+  iconUrl: './leaflet_images/pin.svg',
+  iconSize: [40, 40],
+  iconAnchor: [20, 40],
+});
+
+places.forEach((place) => {
+  const {
+    coordinates: {
+      lat,
+      lng
+    }
+  } = place;
+  const adPins = L.marker({
+    lat,
+    lng,
+  },
+    {
+      draggable: false,
+      icon: addPinIcon,
+    });
+
+  adPins
+    .addTo(map)
+    .bindPopup(createCustomPopup(place));
+});
