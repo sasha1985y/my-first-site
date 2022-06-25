@@ -407,7 +407,7 @@ body {
 
 .map__canvas {
   width: 100%;
-  height: 500px;
+  height: 1000px;
   background-color: #dddddd;
 }
 
@@ -426,4 +426,81 @@ body {
           flex-direction: column;
 
   overflow: hidden;
+}
+
+/* фото попапа */
+
+.popup__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 2%;
+  border: 1px solid;
+  border-color: #ff00bf;
+  transition: all 0.5s;
+}
+
+.popup__image:hover {
+  width: 200%;
+  height: 200%;
+  border-radius: 5%;
+  border: 2px solid;
+  border-color: #00ff2a;
+  transition: all 0.5s;
+}
+
+/* аватар попапа */
+
+.popup__avatar {
+  width: 50%;
+  height: 50%;
+  border-radius: 2%;
+  border: 1px solid;
+  border-color: #ff00bf;
+  transition: all 0.5s;
+}
+
+.popup__avatar:hover {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  border: 2px solid;
+  border-color: #00ff2a;
+  transition: all 0.5s;
+}
+
+/* кнопки попапа */
+
+.go,
+.back {
+  background-color: rgba(44, 16, 16, 0.767);
+  border-radius: 5%;
+  transition: all 0.5s;
+}
+
+.go,
+.back,
+.popup__counter,
+.small_piece,
+.popup__counter--array,
+.popup__title,
+.popup__description {
+  color: #ff00bf;
+  transition: all 1.5s;
+}
+
+.go:hover,
+.back:hover,
+.popup__counter:hover,
+.small_piece:hover,
+.popup__counter--array:hover,
+.popup__title:hover,
+.popup__description:hover {
+  color: #00ff2a;
+  transition: all 0.5s;
+}
+
+.go:hover,
+.back:hover{
+  background: rgba(44, 16, 16, 0.719);
+  transition: all 0.5s;
 }
