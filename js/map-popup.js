@@ -25,10 +25,9 @@ const createCustomPopup = (place) => {
     popupGoButton.addEventListener('click', () => {
       i = Number.parseInt(popupCounterPhotos.textContent, 10);
       i++;
-      if (i === place.image.length - 1 && !place.image.length === 2 ) {
+      popupBackButton.classList.remove('hidden');
+      if (i === place.image.length - 1) {
         popupGoButton.classList.add('hidden');
-      } else if (i === 1 && popupBackButton.classList.contains('hidden')) {
-        popupBackButton.classList.remove('hidden');
       }
       popupCounterPhotos.textContent = `${i}`;
       popupPhoto.src = place.image[i];
@@ -41,15 +40,12 @@ const createCustomPopup = (place) => {
     popupBackButton.addEventListener('click', () => {
       j = Number.parseInt(popupCounterPhotos.textContent, 10);
       j--;
-      if (j > 1 && popupBackButton.classList.contains('hidden')) {
-        popupBackButton.classList.remove('hidden');
-      } else if (j < 1) {
+      popupGoButton.classList.remove('hidden');
+      if (j < 1) {
         popupBackButton.classList.add('hidden');
-      } else if (j < place.image.length - 1 && popupGoButton.classList.contains('hidden')) {
-        popupGoButton.classList.remove('hidden');
       }
       popupCounterPhotos.textContent = `${j}`;
-      popupPhoto.src = place.image[j]; 
+      popupPhoto.src = place.image[j];
     })
   };
 

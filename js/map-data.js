@@ -10,7 +10,7 @@ const places = [
       lat: 48.75656,
       lng: 44.48939
     },
-    description: 'фотки благословенного места',
+    description: 'самое чёткое место,атвечяю',
     avatar: './img/avatars/my_ava.png'
   },
   {
@@ -23,6 +23,54 @@ const places = [
       lng: 44.48756
     },
     description: 'сделал фото про дороге на работу',
+    avatar: './img/avatars/my_ava.png'
+  },
+  {
+    image: ['./places/volgograd/янтарный_вечер.jpg'],
+    title: '16-этажка',
+    location: 'Volgograd',
+    id: 'yantar',
+    coordinates: {
+      lat: 48.64477,
+      lng: 44.41090
+    },
+    description: 'чёткое место в янтарном',
+    avatar: './img/avatars/my_ava.png'
+  },
+  {
+    image: ['./places/volgograd/фото_попути.jpg'],
+    title: 'начало весны',
+    location: 'Volgograd',
+    id: 'zeml',
+    coordinates: {
+      lat: 48.75211,
+      lng: 44.48344
+    },
+    description: 'зафоткал посреди рутины',
+    avatar: './img/avatars/my_ava.png'
+  },
+  {
+    image: ['./places/volgograd/грязное_стекло.jpg'],
+    title: 'помыть стекло',
+    location: 'Volgograd',
+    id: 'aviator',
+    coordinates: {
+      lat: 48.75486,
+      lng: 44.47717
+    },
+    description: 'сидел и фоткал чёткие места',
+    avatar: './img/avatars/my_ava.png'
+  },
+  {
+    image: ['./places/volgograd/краснополянская.jpg'],
+    title: 'солнечная минута',
+    location: 'Volgograd',
+    id: 'krasnopol',
+    coordinates: {
+      lat: 48.77141,
+      lng: 44.47812
+    },
+    description: 'такую погоду грех не запечатлировать)',
     avatar: './img/avatars/my_ava.png'
   },
   {
