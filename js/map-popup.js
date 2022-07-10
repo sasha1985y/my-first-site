@@ -1,3 +1,5 @@
+import {isEscapeKey} from './utilites.js';
+
 const createCustomPopup = (place) => {
   const templateContent = document.querySelector('#card')
   .content
@@ -84,6 +86,14 @@ const createCustomPopup = (place) => {
     popupAvatar.src = place.avatar;
   } else {
     popupAvatar.remove();
+  };
+
+  const popupLogo = templateContent.querySelector('.popup__logo');
+  if(place.logo) {
+    popupLogo.src = place.logo;
+    popupLogo.classList.remove('hidden');
+  } else {
+    popupLogo.remove();
   };
 
   return templateContent;

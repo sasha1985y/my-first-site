@@ -86,4 +86,62 @@ const to_beach = ['./places/kalach_don/дорога_на_Дон.jpg', './places/
 
 const train = ['./places/kalach_don/переезд.jpg', './places/kalach_don/переезд_ближе.jpg', './places/kalach_don/базар.jpg'];
 
-export {my_job, to_beach, train};
+const bridge = ['./places/volgograd/bridge/bridge_0.jpg', './places/volgograd/bridge/bridge_1.jpg', './places/volgograd/bridge/bridge_2.jpg'];
+
+const ussrFactory = [
+  './places/volgograd/factory/factory_0.jpg',
+  './places/volgograd/factory/factory_1.jpg',
+  './places/volgograd/factory/factory_2.jpg',
+  './places/volgograd/factory/factory_3.jpg',
+  './places/volgograd/factory/factory_4.jpg',
+  './places/volgograd/factory/factory_5.jpg',
+  './places/volgograd/factory/factory_6.jpg',
+  './places/volgograd/factory/factory_7.jpg',
+  './places/volgograd/factory/factory_8.jpg',
+  './places/volgograd/factory/factory_9.jpg',
+  './places/volgograd/factory/factory_10.jpg',
+  './places/volgograd/factory/factory_11.jpg',
+  './places/volgograd/factory/factory_12.jpg',
+  './places/volgograd/factory/factory_13.jpg',
+  './places/volgograd/factory/factory_14.jpg',
+  './places/volgograd/factory/factory_15.jpg',
+  './places/volgograd/factory/factory_16.jpg',
+  './places/volgograd/factory/factory_17.jpg',
+  './places/volgograd/factory/factory_18.jpg',
+  './places/volgograd/factory/factory_19.jpg',
+  './places/volgograd/factory/factory_20.jpg',
+  './places/volgograd/factory/factory_21.jpg',
+  './places/volgograd/factory/factory_22.jpg',
+  './places/volgograd/factory/factory_23.jpg',
+  './places/volgograd/factory/factory_24.jpg',
+  './places/volgograd/factory/factory_25.jpg',
+  './places/volgograd/factory/factory_26.jpg',
+  './places/volgograd/factory/factory_27.jpg',
+  './places/volgograd/factory/factory_28.jpg',
+  './places/volgograd/factory/factory_29.jpg',
+  './places/volgograd/factory/factory_30.jpg',
+  './places/volgograd/factory/factory_31.jpg'
+];
+
+const shelf52 = [
+  './places/volgograd/52_шкаф/shelf-52_0.jpg',
+  './places/volgograd/52_шкаф/shelf-52_1.jpg',
+  './places/volgograd/52_шкаф/shelf-52_2.jpg'
+];
+
+const zemlyachka = [
+  './places/volgograd/zemlyachka/zemlyachka_0.jpg',
+  './places/volgograd/zemlyachka/zemlyachka_1.jpg',
+  './places/volgograd/zemlyachka/zemlyachka_2.jpg',
+  './places/volgograd/zemlyachka/zemlyachka_3.jpg',
+  './places/volgograd/zemlyachka/zemlyachka_4.jpg',
+  './places/volgograd/zemlyachka/zemlyachka_5.jpg'
+];
+
+const church = [
+  './places/kalach_don/церковь/церковь_0.jpg',
+  './places/kalach_don/церковь/церковь_1.jpg',
+  './places/kalach_don/церковь/церковь_2.jpg'
+];
+
+export {my_job, to_beach, train, bridge, ussrFactory, shelf52, zemlyachka, church};

@@ -488,14 +488,23 @@ body {
   transition: all 1.5s;
 }
 
-.go:hover,
-.back:hover,
 .popup__counter:hover,
 .small_piece:hover,
 .popup__counter--array:hover,
-.popup__title:hover,
-.popup__description:hover {
+.popup__description:hover,
+.popup__title:hover {
   color: #00ff2a;
+  box-shadow: 5px -5px 5px #ff00bf86, -5px 5px 5px #ff00bf86, -5px -5px 5px #ff00bf86, 5px 5px 5px #ff00bf86;
+  background: #ff00bfbe;
+  border-radius: 30%;
+  transition: all 0.5s;
+}
+
+.go:hover,
+.back:hover {
+  color: #00ff2a;
+  box-shadow: 5px -5px 5px #ff00bf86, -5px 5px 5px #ff00bf86, -5px -5px 5px #ff00bf86, 5px 5px 5px #ff00bf86;
+  background: #ff00bfb4;
   transition: all 0.5s;
 }
 
@@ -503,4 +512,17 @@ body {
 .back:hover{
   background: rgba(44, 16, 16, 0.719);
   transition: all 0.5s;
+}
+
+/* logo */
+
+.popup__logo {
+  transition: all 1.5s;
+}
+
+.popup__logo:hover {
+  transition: all 2s;
+  -webkit-transform: scale(1.5) rotate(1440deg);
+  -ms-transform: scale(1.5) rotate(1440deg);
+  transform: scale(1.5) rotate(1440deg);
 }

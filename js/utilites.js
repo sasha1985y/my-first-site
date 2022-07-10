@@ -7,7 +7,11 @@ const getRandomNumber = (a, b) => {
     return result;
 };
 
-export const getRandomNightLight = () => {
+const getRandomNightLight = () => {
   const nightLightIndex =  getRandomNumber(0, NIGHT_LIGHTES.length - 1);
   return NIGHT_LIGHTES[nightLightIndex];
 };
+
+const isEscapeKey = (evt) => evt.key === 'Escape';
+
+export {getRandomNightLight, isEscapeKey};
