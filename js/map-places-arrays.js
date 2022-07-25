@@ -79,7 +79,10 @@ const my_job = [
   './places/volgograd/station/станция_77.jpg',
   './places/volgograd/station/станция_78.jpg',
   './places/volgograd/station/станция_79.jpg',
-  './places/volgograd/station/станция_80.jpg'
+  './places/volgograd/station/станция_80.jpg',
+  './places/volgograd/station/станция_81.jpg',
+  './places/volgograd/station/станция_82.jpg',
+  './places/volgograd/station/станция_83.jpg'
 ];
 
 const to_beach = ['./places/kalach_don/дорога_на_Дон.jpg', './places/kalach_don/дорога_на_Дон_ближе.jpg'];
@@ -144,4 +147,10 @@ const church = [
   './places/kalach_don/церковь/церковь_2.jpg'
 ];
 
-export {my_job, to_beach, train, bridge, ussrFactory, shelf52, zemlyachka, church};
+const jaguar = [
+  './places/volgograd/jaguar/jaguar_0.jpg',
+  './places/volgograd/jaguar/jaguar_1.jpg',
+  './places/volgograd/jaguar/jaguar_2.jpg'
+];
+
+export {my_job, to_beach, train, bridge, ussrFactory, shelf52, zemlyachka, church, jaguar};
