@@ -1,5 +1,4 @@
 import {isEscapeKey} from './utilites.js';
-
 const createCustomPopup = (place) => {
   const templateContent = document.querySelector('#card')
   .content
@@ -8,12 +7,18 @@ const createCustomPopup = (place) => {
   const popupPhoto = templateContent.querySelector('.popup__image');
   if(place.image) {
     popupPhoto.src = place.image[0];
+  };
+  
+  if (place.small === true) {
+    popupPhoto.classList.remove('popup__image');
+    popupPhoto.classList.add('popup__image-bigger');
   }
 
   const popupButtons = templateContent.querySelector('.popup__buttons');
   if(place.image.length > 1) {
     popupButtons.classList.remove('hidden');
-  }
+  };
+
   
   const popupCounterPhotos = popupButtons.querySelector('.popup__counter');
   const popupCounterArray = popupButtons.querySelector('.popup__counter--array');
@@ -58,6 +63,14 @@ const createCustomPopup = (place) => {
     popupTitle.textContent = place.title;
   } else {
     popupTitle.remove();
+  };
+
+  const popupSpecialTitle = templateContent.querySelector('.popup__special-title');
+  if(place.special) {
+    popupSpecialTitle.classList.remove('hidden');
+    popupSpecialTitle.textContent = place.special;
+  } else {
+    popupSpecialTitle.remove();
   };
 
   const popupLocation = templateContent.querySelector('.popup__location');
