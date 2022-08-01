@@ -82,7 +82,22 @@ const my_job = [
   './places/volgograd/station/станция_80.jpg',
   './places/volgograd/station/станция_81.jpg',
   './places/volgograd/station/станция_82.jpg',
-  './places/volgograd/station/станция_83.jpg'
+  './places/volgograd/station/станция_83.jpg',
+  './places/volgograd/station/станция_84.jpg',
+  './places/volgograd/station/станция_85.jpg',
+  './places/volgograd/station/станция_86.jpg',
+  './places/volgograd/station/станция_87.jpg',
+  './places/volgograd/station/станция_88.jpg',
+  './places/volgograd/station/станция_89.jpg',
+  './places/volgograd/station/станция_90.jpg',
+  './places/volgograd/station/станция_91.jpg',
+  './places/volgograd/station/станция_92.jpg',
+  './places/volgograd/station/станция_93.jpg',
+  './places/volgograd/station/станция_94.jpg',
+  './places/volgograd/station/станция_95.jpg',
+  './places/volgograd/station/станция_96.jpg',
+  './places/volgograd/station/станция_97.jpg',
+  './places/volgograd/station/станция_98.jpg',
 ];
 
 const to_beach = ['./places/kalach_don/дорога_на_Дон.jpg', './places/kalach_don/дорога_на_Дон_ближе.jpg'];
@@ -153,4 +168,31 @@ const jaguar = [
   './places/volgograd/jaguar/jaguar_2.jpg'
 ];
 
-export {my_job, to_beach, train, bridge, ussrFactory, shelf52, zemlyachka, church, jaguar};
+const appendics = [
+  './places/kalach_don/аппендицит/аппендицит_2.jpg',
+  './places/kalach_don/аппендицит/аппендицит_3.jpg',
+  './places/kalach_don/аппендицит/аппендицит_4.jpg',
+  './places/kalach_don/аппендицит/аппендицит_5.jpg'
+];
+
+const forest = [
+  './places/kalach_don/лесок/лесок_0.jpg',
+  './places/kalach_don/лесок/лесок_1.jpg',
+  './places/kalach_don/лесок/лесок_2.jpg',
+  './places/kalach_don/лесок/лесок_3.jpg',
+  './places/kalach_don/лесок/лесок_4.jpg',
+  './places/kalach_don/лесок/лесок_5.jpg'
+];
+
+const heartOfForest = [
+  './places/kalach_don/чаща/чаща_0.jpg',
+  './places/kalach_don/чаща/чаща_1.jpg',
+  './places/kalach_don/чаща/чаща_2.jpg',
+  './places/kalach_don/чаща/чаща_3.jpg',
+  './places/kalach_don/чаща/чаща_4.jpg',
+  './places/kalach_don/чаща/чаща_5.jpg',
+  './places/kalach_don/чаща/чаща_6.jpg',
+  './places/kalach_don/чаща/чаща_7.jpg'
+];
+
+export {my_job, to_beach, train, bridge, ussrFactory, shelf52, zemlyachka, church, jaguar, appendics, forest, heartOfForest};
